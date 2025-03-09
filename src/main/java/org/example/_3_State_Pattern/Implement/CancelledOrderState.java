@@ -1,7 +1,7 @@
-package org.example.Implement;
+package org.example._3_State_Pattern.Implement;
 
-import org.example.Entity.Order;
-import org.example.Interface.OrderState;
+import org.example._3_State_Pattern.Entity.Order;
+import org.example._3_State_Pattern.Interface.OrderState;
 
 public class CancelledOrderState implements OrderState {
     @Override

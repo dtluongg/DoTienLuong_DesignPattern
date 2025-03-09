@@ -1,0 +1,2 @@
+Tạo lớp trừu tượng abstract (SuperClass) để định nghĩa các đối tượng, nhưng các đối tượng đc tạo ra phụ thuộc vào các lớp đc kế thừa (SubClass).
+Lớp FactoryClass dùng để điều hướng cho lớp trừu tượng biết đối tượng con là lớp nào.

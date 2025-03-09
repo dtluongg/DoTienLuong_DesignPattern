@@ -1,0 +1,25 @@
+Singleton Pattern là gì?
+
+    Singleton Pattern là một design pattern thuộc nhóm Creational (khởi tạo). Mục đích của nó là đảm bảo rằng một class chỉ có duy nhất một instance (thể hiện) và cung cấp một điểm truy cập toàn cục đến instance đó.
+
+Khi nào nên sử dụng Singleton Pattern?
+
+    Khi chỉ cần một thể hiện duy nhất: Có những tài nguyên hoặc dịch vụ mà chỉ cần một thể hiện duy nhất là đủ. Ví dụ:
+
+        Quản lý kết nối database: Chỉ cần một connection pool duy nhất để quản lý các kết nối đến database.
+
+        Logger: Chỉ cần một logger duy nhất để ghi log toàn bộ ứng dụng.
+
+        Configuration Manager: Chỉ cần một configuration manager duy nhất để quản lý các cấu hình của ứng dụng.
+
+    Tiết kiệm tài nguyên: Tạo một thể hiện duy nhất giúp tiết kiệm tài nguyên hệ thống so với việc tạo nhiều thể hiện.
+
+    Điểm truy cập toàn cục: Cung cấp một điểm truy cập duy nhất cho phép các phần khác của ứng dụng dễ dàng truy cập và sử dụng tài nguyên.
+
+Các thành phần chính:
+
+    Private Constructor: Constructor của class được khai báo là private. Điều này ngăn các class khác tạo thể hiện trực tiếp của class Singleton.
+
+    Static Instance: Một biến static thuộc kiểu của class Singleton, lưu trữ thể hiện duy nhất của class.
+
+    Static Method: Một phương thức static (thường được gọi là getInstance()) cung cấp điểm truy cập toàn cục để lấy thể hiện duy nhất.

@@ -1,6 +1,6 @@
-package org.example.Interface;
+package org.example._3_State_Pattern.Interface;
 
-import org.example.Entity.Order;
+import org.example._3_State_Pattern.Entity.Order;
 
 public interface OrderState {
     void handleOrder(Order order); // phương thức xử lý logic đơn hàng
